@@ -179,7 +179,7 @@ function processDuplicateFree(list, cb) {
   /* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */
   // let newList = list.from(new Set(list));
   // return cb(newList);
-
+  
   // const filteredList = list.filter((list, index) => list.index(list) !== index); 
   // return cb(filteredList)
 }
@@ -204,11 +204,13 @@ function processDuplicateFree(list, cb) {
 */
 function getFullNames(runners) {
   /* CODE HERE */
-  runners.forEach(function(last_name, first_name) {
-    return {
-    last_name: last_name,
-    first_name: first_name
-    }
+  // let runnerNames = [];
+  // getFullNames.forEach(function(lastN, first) {
+  //    let lastN = runnerNames.push(runners.last_name);
+  //    let first = runnerNames.push(runners.first_name);   
+  // });
+  runners.forEach(function (runners) {
+    return (runners.last_name, runners.first_name);
   });
   
 }
@@ -225,8 +227,13 @@ function getFullNames(runners) {
  * @returns an array with all the runners' first names in ALL CAPS.
  * The first names appear in the array in the same order the runners appear in the `runners` array.
 */
-function firstNamesAllCaps(/* CODE HERE */) {
+function firstNamesAllCaps(runners) {
   /* CODE HERE */
+  const names = runners.map(function (runners) {
+    return (runners.first_name).toUpperCase();
+  });
+return names;
+
 }
 
 /**
